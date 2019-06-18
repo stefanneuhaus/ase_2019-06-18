@@ -1,4 +1,4 @@
-## "Neue" Java Sprachkonzepte
+# "Neue" Java Sprachkonzepte
 
 * Vorlesungsmodul _Advanced Software Engineering_ (Master Medieninformatik)
 * Sommersemester 2019
