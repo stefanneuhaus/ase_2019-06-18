@@ -1,10 +1,14 @@
-## "Neue" Java Sprachkonzepte
+# "Neue" Java Sprachkonzepte
 
-* Vorlesungsmodul _Advanced Software Engineering_ (Master Medieninformatik)
-* Sommersemester 2019
-* [Hochschule Düsseldorf](https://hs-duesseldorf.de/)
+Vorlesungsmodul _Advanced Software Engineering_ (Master Medieninformatik) 
 
-Übungsaufgaben und -lösungen im Rahmen des Vorlesungsmoduls *Advanced Software Engineering* zu den Themen
+Sommersemester 2019
+
+[Hochschule Düsseldorf](https://hs-duesseldorf.de/)
+
+---
+
+Übungsaufgaben und -lösungen im Rahmen des Vorlesungsmoduls *Advanced Software Engineering* zu den folgenden Themen:
 * _Java Streams API_
 * _Lambda Expressions_
 * _Method References_
