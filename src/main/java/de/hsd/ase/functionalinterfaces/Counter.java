@@ -1,5 +1,6 @@
 package de.hsd.ase.functionalinterfaces;
 
+@FunctionalInterface
 public interface Counter {
 
     String COUNTER_PREFIX = "count: ";

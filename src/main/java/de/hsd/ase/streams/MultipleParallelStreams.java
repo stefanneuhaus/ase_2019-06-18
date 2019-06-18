@@ -8,8 +8,7 @@ public class MultipleParallelStreams {
     public static void main(String[] args) throws InterruptedException {
         Thread longRunningOperations = new Thread(MultipleParallelStreams::processBlockingOperationsInParallel, "thread-blocking");
 
-        // TODO: uncomment me!
-        // longRunningOperations.start();
+        longRunningOperations.start();
 
         Thread.sleep(2000);
 
@@ -35,7 +34,7 @@ public class MultipleParallelStreams {
     }
 
     static void longRunningCall(int ignoredInput) {
-        System.out.println("Executing long running calculation ... -- " + Thread.currentThread().getName());
+        System.out.println("Simulate blocking I/O call with long response time ... -- " + Thread.currentThread().getName());
         try {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {

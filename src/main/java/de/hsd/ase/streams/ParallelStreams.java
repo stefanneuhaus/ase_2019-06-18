@@ -1,18 +1,23 @@
 package de.hsd.ase.streams;
 
 import java.util.function.LongUnaryOperator;
+import java.util.stream.LongStream;
 
 public class ParallelStreams {
 
     static long processLongStream(int numberOfStreamElements, LongUnaryOperator operator) {
         long startMillis = System.currentTimeMillis();
 
-        // TODO: implement processing
-        long result = 42;
+        long result = LongStream.range(0, numberOfStreamElements)
+                .parallel()
+                .map(operator)
+                .peek(ignoredLong -> System.out.println(Thread.currentThread().getName()))
+                .sum();
 
         long durationMillis = System.currentTimeMillis() - startMillis;
         long durationSeconds = durationMillis / 1_000;
         System.out.println("Result: " + result + " (took " + durationSeconds + " sec)");
+
         return result;
     }
 
